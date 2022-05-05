@@ -1,75 +1,56 @@
 import { Link } from "react-router-dom";
 import profile from "../Images/profile.png";
 import imgHome from "../Images/imgHome.png";
-
-window.onload = function () {
-  let navBarToggle = document.getElementById("js-nav-toggle");
-  navBarToggle.addEventListener("click", NavbarShow);
-  navBarToggle.addEventListener("click", function () {
-    if (navBarToggle.style.color !== "white") {
-      navBarToggle.style.color = "white";
-    } else {
-      navBarToggle.style.color = "black";
-    }
-  });
-};
-
-function NavbarShow() {
-  var mainNav = document.getElementById("js-menu");
-  if (mainNav.style.display === "none") {
-    mainNav.style.display = "flex";
-  } else {
-    mainNav.style.display = "none";
-  }
-}
+import github from "../Images/github.png";
+import facebook from "../Images/facebook.png";
+import email from "../Images/email.png";
 
 function Home() {
   return (
     <div className="w-auto rounded shadow-md h-auto">
       <div className="w-50 h-auto rounded shadow-lg bottom-2 bg-indigo-500">
-        <div className="flex justify-between">
+        <div className="flex justify-center">
           <div className="m-2">
             <img src={profile} alt="profile" className="h-12 w-auto"></img>
           </div>
+
+          <div className="flex mt-4" id="nav">
+            <div>
+              <p className="my-2 ml-2 text-center text-white text-xs font-prompt font-bold hover:text-gray-800 hover:text-sm ">
+                <Link to="/">HOME</Link>
+              </p>
+            </div>
+            <div>
+              <p className="my-2 ml-2 text-center text-white text-xs font-prompt font-bold hover:text-gray-800 hover:text-sm ">
+                <Link to="about">ABOUT</Link>
+              </p>
+            </div>
+            <div>
+              <p className="my-2 ml-2 text-center text-white text-xs font-prompt font-bold hover:text-gray-800 hover:text-sm  ">
+                <Link to="skills">SKILLS</Link>
+              </p>
+            </div>
+            <div>
+              <p className="my-2 ml-2 text-center text-white text-xs font-prompt font-bold hover:text-gray-800 hover:text-sm  ">
+                <Link to="portfolio">PORTFOLIO</Link>
+              </p>
+            </div>
+            <div>
+              <p className="my-2 ml-2 mr-2 text-center text-white text-xs font-prompt font-bold hover:text-gray-800 hover:text-sm  ">
+                <Link to="contact">CONTACT</Link>
+              </p>
+            </div>
+          </div>
+
+
           <div>
             <div className="mt-4">
-              <span
-                className="nav-toggle text-2xl mx-8 text-gray-50"
-                id="js-nav-toggle"
-              >
-                <i className="fas fa-bars"></i>
-              </span>
+            
             </div>
           </div>
         </div>
       </div>
-      <div className="flex justify-between" id="js-menu">
-        <div>
-          <p className="my-2 ml-2 text-center text-black text-xs font-prompt font-bold hover:text-black underline underline-offset-8 decoration-indigo-500">
-            <Link to="/">HOME</Link>
-          </p>
-        </div>
-        <div>
-          <p className="my-2 ml-2 text-center text-black text-xs font-prompt font-bold hover:text-black">
-            <Link to="about">ABOUT</Link>
-          </p>
-        </div>
-        <div>
-          <p className="my-2 ml-2 text-center text-black text-xs font-prompt font-bold hover:text-black ">
-            <Link to="skills">SKILLS</Link>
-          </p>
-        </div>
-        <div>
-          <p className="my-2 ml-2 text-center text-black text-xs font-prompt font-bold hover:text-black ">
-            <Link to="portfolio">PORTFOLIO</Link>
-          </p>
-        </div>
-        <div>
-          <p className="my-2 ml-2 mr-2 text-center text-black text-xs font-prompt font-bold hover:text-black ">
-            <Link to="contact">CONTACT</Link>
-          </p>
-        </div>
-      </div>
+
       <div className="pb-2">
         {/*column 2  Part and details*/}
         <div>
@@ -95,6 +76,23 @@ function Home() {
               ></img>
             </div>
           </div>
+          <div className="flex justify-center mt-4 mb-4">
+                <div className="mx-2">
+                  <a href="https://github.com/Panthonf">
+                    <img src={github} alt="" width="30px"></img>
+                  </a>
+                </div>
+                <div>
+                  <a href="https://web.facebook.com/panthonkansap">
+                    <img src={facebook} alt="" width="30px"></img>
+                  </a>
+                </div>
+                <div className="mx-2">
+                  <a href="mailto:panthon.f@gmail.com">
+                    <img src={email} alt="" width="30px"></img>
+                  </a>
+                </div>
+              </div>
         </div>
         <div className="m-2">
           <p className=" text-center text-indigo-400 text-xs font-prompt font-light">
