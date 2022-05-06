@@ -4,9 +4,14 @@ import imgAbout from "../Images/imgAbout.png";
 import github from "../Images/github.png";
 import facebook from "../Images/facebook.png";
 import email from "../Images/email.png";
+import { Helmet } from "react-helmet";
+
 function About() {
   return (
     <div className="w-auto rounded shadow-md h-auto">
+      <Helmet>
+        <title>About | Panthon Kansap</title>
+      </Helmet>
       <div className="w-50 h-auto rounded shadow-lg bottom-2 bg-indigo-500">
         <div className="flex justify-center">
           <div className="m-2">

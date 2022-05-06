@@ -4,10 +4,14 @@ import imgHome from "../Images/imgHome.png";
 import github from "../Images/github.png";
 import facebook from "../Images/facebook.png";
 import email from "../Images/email.png";
+import { Helmet } from "react-helmet";
 
 function Home() {
   return (
     <div className="w-auto rounded shadow-md h-auto">
+      <Helmet>
+        <title>Home | Panthon Kansap</title>
+      </Helmet>
       <div className="w-50 h-auto rounded shadow-lg bottom-2 bg-indigo-500">
         <div className="flex justify-center">
           <div className="m-2">
@@ -42,11 +46,8 @@ function Home() {
             </div>
           </div>
 
-
           <div>
-            <div className="mt-4">
-            
-            </div>
+            <div className="mt-4"></div>
           </div>
         </div>
       </div>
@@ -77,22 +78,22 @@ function Home() {
             </div>
           </div>
           <div className="flex justify-center mt-4 mb-4">
-                <div className="mx-2">
-                  <a href="https://github.com/Panthonf">
-                    <img src={github} alt="" width="30px"></img>
-                  </a>
-                </div>
-                <div>
-                  <a href="https://web.facebook.com/panthonkansap">
-                    <img src={facebook} alt="" width="30px"></img>
-                  </a>
-                </div>
-                <div className="mx-2">
-                  <a href="mailto:panthon.f@gmail.com">
-                    <img src={email} alt="" width="30px"></img>
-                  </a>
-                </div>
-              </div>
+            <div className="mx-2">
+              <a href="https://github.com/Panthonf">
+                <img src={github} alt="" width="30px"></img>
+              </a>
+            </div>
+            <div>
+              <a href="https://web.facebook.com/panthonkansap">
+                <img src={facebook} alt="" width="30px"></img>
+              </a>
+            </div>
+            <div className="mx-2">
+              <a href="mailto:panthon.f@gmail.com">
+                <img src={email} alt="" width="30px"></img>
+              </a>
+            </div>
+          </div>
         </div>
         <div className="m-2">
           <p className=" text-center text-indigo-400 text-xs font-prompt font-light">
