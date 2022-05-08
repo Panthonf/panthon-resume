@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import profile from "../Images/profile.png";
 import github from "../Images/github.png";
-
 import facebook from "../Images/facebook.png";
 import email from "../Images/email.png";
 import React from "react";
 import Helmet from "react-helmet";
+
 function Contact() {
   return (
     <div className="w-auto rounded shadow-md h-auto">
