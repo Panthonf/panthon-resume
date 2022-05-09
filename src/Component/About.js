@@ -13,35 +13,71 @@ function About() {
         <title>About | Panthon Kansap</title>
       </Helmet>
       <div className="w-50 h-auto rounded shadow-lg bottom-2 bg-indigo-500">
-        <div className="flex justify-center">
+        <div className="flex justify-between">
           <div className="m-2">
-            <img src={profile} alt="profile" className="h-12 w-auto"></img>
+            <img
+              src={profile}
+              alt="profile"
+              className="h-12 w-auto hover:ml-2"
+            ></img>
           </div>
 
-          <div className="flex mt-4" id="nav">
+          <div
+            className="max-h-max grid items-center ml-56 font-prompt text-lg text-gray-50 hover:text-gray-600"
+            id="headTitle"
+          >
+            " The purpose of our lives is to be happy "
+          </div>
+
+          <div className="flex items-center" id="nav">
             <div>
-              <p className="my-2 ml-2 text-center text-white text-xs font-prompt font-bold hover:text-gray-800 hover:text-sm ">
-                <Link to="/">HOME</Link>
+              <p className="ml-4 text-center text-white text-xs font-prompt font-bold hover:text-gray-600 hover:text-sm ">
+                <Link to="/">
+                  <i className="fi fi-rr-home text-lg" id="icon"></i>
+                  <div className="text-xs" id="Hidden">
+                    HOME
+                  </div>
+                </Link>
               </p>
             </div>
             <div>
-              <p className="my-2 ml-2 text-center text-white text-xs font-prompt font-bold hover:text-gray-800 hover:text-sm ">
-                <Link to="../about">ABOUT</Link>
+              <p className="ml-4 text-center text-white text-xs font-prompt font-bold hover:text-gray-600 hover:text-sm ">
+                <Link to="../about">
+                  <i className="fi fi-rr-info text-lg" id="icon"></i>
+                  <div className="text-xs" id="Hidden">
+                    ABOUT
+                  </div>
+                </Link>
               </p>
             </div>
             <div>
-              <p className="my-2 ml-2 text-center text-white text-xs font-prompt font-bold hover:text-gray-800 hover:text-sm  ">
-                <Link to="../skills">SKILLS</Link>
+              <p className="ml-4 text-center text-white text-xs font-prompt font-bold hover:text-gray-600 hover:text-sm  ">
+                <Link to="../skills">
+                  <i class="fi fi-rr-head-side-thinking text-lg" id="icon"></i>
+                  <div className="text-xs" id="Hidden">
+                    SKILLS
+                  </div>
+                </Link>
               </p>
             </div>
             <div>
-              <p className="my-2 ml-2 text-center text-white text-xs font-prompt font-bold hover:text-gray-800 hover:text-sm  ">
-                <Link to="../portfolio">PORTFOLIO</Link>
+              <p className="ml-4 text-center text-white text-xs font-prompt font-bold hover:text-gray-600 hover:text-sm  ">
+                <Link to="../portfolio">
+                  <i class="fi fi-rr-briefcase text-lg" id="icon"></i>
+                  <div className="text-xs" id="Hidden">
+                    PORTFOLIO
+                  </div>
+                </Link>
               </p>
             </div>
             <div>
-              <p className="my-2 ml-2 mr-2 text-center text-white text-xs font-prompt font-bold hover:text-gray-800 hover:text-sm  ">
-                <Link to="../contact">CONTACT</Link>
+              <p className="ml-4 mr-4 text-center text-white text-xs font-prompt font-bold hover:text-gray-600 hover:text-sm  ">
+                <Link to="../contact">
+                  <i class="fi fi-rr-form text-xl" id="icon"></i>
+                  <div className="text-xs" id="Hidden">
+                    CONTACT
+                  </div>
+                </Link>
               </p>
             </div>
           </div>
